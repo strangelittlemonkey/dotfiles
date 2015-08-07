@@ -29,6 +29,10 @@
         (goto-char (point-min))
         (while (search-forward (string ?\C-m) nil t)
           (replace-match (string ?\C-j) nil t))))
+
+;; Save clock history across Emacs sessions
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
  
 ;; Add support for marmalade
 (require 'package)
