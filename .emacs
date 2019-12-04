@@ -199,6 +199,7 @@
 (add-hook 'ruby-mode-hook
           (lambda ()
             (flycheck-mode)
+            (rubocop-mode)
             ))
 
 ;; Rust
