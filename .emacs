@@ -155,6 +155,9 @@
             ;; Default indentation is usually 2 spaces, changing to 4.
             (set (make-local-variable 'sgml-basic-offset) 4)))
 
+;; Jinja                                                                                                                                                                                                                                                                          
+(add-to-list 'auto-mode-alist '("\\.j2\\'" . jinja2-mode))
+
 ;; Just
 (add-to-list 'auto-mode-alist '("\\justfile$" . makefile-mode))
 
