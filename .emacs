@@ -212,9 +212,9 @@
             (flycheck-mode)
             (flymake-mode)
             (flymake-rust-load)
+            (rust-enable-format-on-save)
             ))
 (require 'flymake-rust)
-(setq rust-format-on-save t)
 
 ;; Shell
 (add-hook 'shell-script-mode-hook
