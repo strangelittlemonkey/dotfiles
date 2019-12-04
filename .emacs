@@ -219,6 +219,7 @@
 ;; Shell
 (add-hook 'shell-script-mode-hook
           (lambda()
+            (flycheck-mode)
             (setq indent-tabs-mode t)
             (setq tab-width 4)
             (setq c-basic-indent 4)
