@@ -226,6 +226,12 @@
                  (number-sequence 4 200 4))
             ))
 
+;; YAML                                                                                                                                                                                                                                                                           
+(add-hook 'yaml-mode-hook
+          (lambda()
+            (flycheck-mode)
+            ))
+
 ;; End of language specific settings
 
 
